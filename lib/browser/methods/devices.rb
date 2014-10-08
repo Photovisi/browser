@@ -37,5 +37,10 @@ class Browser
     def windows_touchscreen_desktop?
       windows? && !!(ua =~ /Touch/)
     end
+
+    # Detect if browser is Desktop (not tablet or mobile).
+    def is_desktop?
+      !tablet? && !mobile?
+    end
   end
 end
