@@ -62,6 +62,7 @@ describe Browser do
     assert @browser.safari?
     assert @browser.webkit?
     assert @browser.modern?
+    assert @browser.desktop?
     assert_equal "5.0.1", @browser.full_version
     assert_equal "5", @browser.version
   end
@@ -78,6 +79,7 @@ describe Browser do
     assert @browser.ios?
     refute @browser.tablet?
     refute @browser.mac?
+    refute @browser.desktop?
     assert_equal "3.0", @browser.full_version
     assert_equal "3", @browser.version
   end
@@ -94,6 +96,7 @@ describe Browser do
     assert @browser.tablet?
     refute @browser.mobile?
     refute @browser.mac?
+    refute @browser.desktop?
     assert_equal "4.0.4", @browser.full_version
     assert_equal "4", @browser.version
   end
