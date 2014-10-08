@@ -175,9 +175,9 @@ class Browser
     !!(ua =~ /(Opera|OPR)/)
   end
   
-  # Detect if browser is on a Desktop.
+  # Detect if browser is Desktop (not tablet or mobile).
   def desktop?
-    
+    !(tablet? || mobile?)
   end
 
   # Detect if browser is Silk.
