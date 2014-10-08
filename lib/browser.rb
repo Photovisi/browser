@@ -174,6 +174,11 @@ class Browser
   def opera?
     !!(ua =~ /(Opera|OPR)/)
   end
+  
+  # Detect if browser is on a Desktop.
+  def desktop?
+    
+  end
 
   # Detect if browser is Silk.
   def silk?
